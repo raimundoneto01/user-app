@@ -3,8 +3,8 @@ import { NavBar } from '../components/NavBar'
 
 export const Cadastrar = () => {
   return (
-    <div className='container'>
-        <NavBar/>
+    <div >
+        
        <h1> Cadastrar</h1>
     </div>
   )

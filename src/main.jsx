@@ -7,8 +7,10 @@ import {
   } from "react-router-dom";
 import { Login } from './Pages/Login.jsx';
 import { Usuario } from './Pages/Usuario.jsx';
-import { Cadastrar } from './Pages/Cadastrar.jsx';
+// import { Cadastrar } from './Pages/Cadastrar.jsx';
 import { Contato } from './Pages/Contato.jsx';
+import { Cadastrar } from './Pages/Cadastrar.jsx';
+import { Home } from './Pages/Home.jsx';
 // import './index.css'
 
 const router = createBrowserRouter([
@@ -16,30 +18,66 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <App/>,
+      children: [
+        {
+          path: "/usuario",
+          element: <Usuario/>,
+          
+        },
+        {
+          path: "/contato",
+          element: <Contato/>,
+      },
+        {
+          path: "/home",
+          element: <Home/>,
+      },
+        {
+          path: "/cadastrar",
+          element: <Cadastrar/>,
+      },
+
+      ]
     },
-    {
-      path: "/home",
-      element: <App/>,
-    },
+    
 
     {
         path: "/login",
         element: <Login/>,
     },
 
-    {
-        path: "/usuario",
-        element: <Usuario/>,
-    },
-    {
-        path: "/cadastrar",
-        element: <Cadastrar/>,
-    },
-    {
-        path: "/contato",
-        element: <Contato/>,
-    },
+    
+    
   ]);
+// const router = createBrowserRouter([
+
+//     {
+//       path: "/",
+//       element: <App/>,
+//     },
+//     {
+//       path: "/home",
+//       element: <App/>,
+//     },
+
+//     {
+//         path: "/login",
+//         element: <Login/>,
+//     },
+
+//     {
+//         path: "/usuario",
+//         element: <Usuario/>,
+//     },
+//     {
+//         path: "/cadastrar",
+//         element: <Cadastrar/>,
+//     },
+//     {
+//         path: "/contato",
+//         element: <Contato/>,
+//     },
+//   ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
  <React.StrictMode>

@@ -3,7 +3,7 @@ import React from 'react'
 export const Table = () => {
   return (
     <div>
-        Table
+       xdx
     </div>
   )
 }
