@@ -18,18 +18,18 @@ export const Login = () => {
                   <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
                   <div className="form-floating">
-                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
-                    <label for="floatingInput">Email address</label>
+                    <label for="floatingInput">Email</label>
+                    <input type="email" className="form-control" id="floatingInput" placeholder="Digite seu E-mail"/>
                   </div>
                   <div className="form-floating">
-                    <input type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
-                    <label for="floatingPassword">Password</label>
+                    <label for="floatingPassword">Senha</label>
+                    <input type="password" className="form-control" id="floatingPassword" placeholder="Digite a senha"/>
                   </div>
 
                   <div className="form-check text-start my-3">
                     <input className="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault"/>
                     <label className="form-check-label" for="flexCheckDefault">
-                      Remember me
+                      Lembrar depois
                     </label>
                   </div>
                   <Button className='w-100 py-2' variant="primary" type='submit'>Entrar</Button>
